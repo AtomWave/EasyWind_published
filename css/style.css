@@ -292,6 +292,7 @@ h6 {
 .bottom-content__bottom-logo img {
   max-width: 184px;
   max-height: 14vh;
+  min-height: 95px;
 }
 
 @supports (width: clamp( 3.75rem , 1.3837808439rem  +  11.8318352703vw , 11.5rem )) {
