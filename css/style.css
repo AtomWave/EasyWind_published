@@ -222,7 +222,30 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 96px 0px;
+}
+
+@supports (padding-top: clamp( 1.875rem , 0.6155607717rem  +  6.2975897407vw , 6rem )) {
+  .footer-page__content {
+    padding-top: clamp( 1.875rem , 0.6155607717rem  +  6.2975897407vw , 6rem );
+  }
+}
+
+@supports not (padding-top: clamp( 1.875rem , 0.6155607717rem  +  6.2975897407vw , 6rem )) {
+  .footer-page__content {
+    padding-top: calc(1.875rem + 4.125 * (100vw - 19.99875rem) / 65.50125);
+  }
+}
+
+@supports (padding-bottom: clamp( 1.875rem , 0.6155607717rem  +  6.2975897407vw , 6rem )) {
+  .footer-page__content {
+    padding-bottom: clamp( 1.875rem , 0.6155607717rem  +  6.2975897407vw , 6rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 0.6155607717rem  +  6.2975897407vw , 6rem )) {
+  .footer-page__content {
+    padding-bottom: calc(1.875rem + 4.125 * (100vw - 19.99875rem) / 65.50125);
+  }
 }
 
 .footer-page__picture {
