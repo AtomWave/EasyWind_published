@@ -197,14 +197,55 @@ h6 {
 }
 */
 
+.footer-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 1380px;
+  background-color: #c5291b;
+  text-align: center;
+  color: #ffffff;
+  padding: 0px 4vw;
+}
+
+.footer-page__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 96px 0px;
+}
+
+.footer-page__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-page__picture img {
+  max-width: 100%;
+}
+
 @supports (padding-top: clamp( 3.125rem , -3.8019157554rem  +  34.6367435736vw , 25.8125rem )) {
-  .content-page__bottom {
+  .footer-page__bottom {
     padding-top: clamp( 3.125rem , -3.8019157554rem  +  34.6367435736vw , 25.8125rem );
   }
 }
 
 @supports not (padding-top: clamp( 3.125rem , -3.8019157554rem  +  34.6367435736vw , 25.8125rem )) {
-  .content-page__bottom {
+  .footer-page__bottom {
     padding-top: calc(3.125rem + 22.6875 * (100vw - 19.99875rem) / 65.50125);
   }
 }
@@ -227,6 +268,7 @@ h6 {
 
 .bottom-content__bottom-logo img {
   max-width: 184px;
+  max-height: 14vh;
 }
 
 @supports (width: clamp( 3.75rem , 1.3837808439rem  +  11.8318352703vw , 11.5rem )) {
@@ -239,6 +281,10 @@ h6 {
   .bottom-content__bottom-logo img {
     width: calc(3.75rem + 7.75 * (100vw - 19.99875rem) / 65.50125);
   }
+}
+
+.copyright-content__footer-text p {
+  padding-bottom: 0;
 }
 
 .page {
@@ -485,7 +531,6 @@ h6 {
 }
 
 .text-content {
-  padding: 0px 1.875rem;
   font-family: Montserrat;
   text-align: center;
   line-height: 1.7em;
@@ -584,7 +629,7 @@ h6 {
 }
 
 .logo-page__logo-slid img {
-  max-width: 390px;
+  max-width: 330px;
 }
 
 @supports (width: clamp( 7.5rem , 1.6795117201rem  +  29.104260416vw , 56.25rem )) {
