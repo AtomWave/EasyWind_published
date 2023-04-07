@@ -3146,13 +3146,16 @@
             slidesPerView: 1,
             spaceBetween: 0,
             autoHeight: true,
-            speed: 800,
-            simulateTouch: true,
-            loop: false,
+            speed: 1e3,
+            loop: true,
+            effect: "fade",
+            fadeEffect: {
+                crossFade: false
+            },
             autoplay: {
-                delay: 3e3,
-                disableOnInteraction: true,
-                stopOnLastSlide: true
+                delay: 2500,
+                disableOnInteraction: false,
+                stopOnLastSlide: false
             },
             on: {}
         });
