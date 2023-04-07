@@ -3153,7 +3153,7 @@
                 crossFade: false
             },
             autoplay: {
-                delay: 1e3,
+                delay: 4e3,
                 disableOnInteraction: false,
                 stopOnLastSlide: false
             },
